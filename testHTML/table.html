@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        .tbody {
+            text-align: right;
+            color: red;
+            background-color: black;
+            
+        }
+        thead tr th {
+            padding: 10px;
+            background-color: red;
+            color: black
+        }
+        .iframe {
+            margin-top: 10px;
+        }
+        .img1 {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    This is Table
+
+    <div>
+        <table 
+        width="100%"
+        border="2">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+
+            <tbody class="tbody">
+                <tr>
+                    <td>Vue</td>
+                    <td>23</td>
+                    <td>07-1235-6756</td>
+                    <td>Lampang</td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>22</td>
+                    <td>08-1546-7442</td>
+                    <td>Lamphun</td>
+                </tr>
+                <tr>
+                    <td>Typescript</td>
+                    <td>21</td>
+                    <td>08-2356-1246</td>
+                    <td>Nan</td>
+                </tr>
+                <tr>
+                    <td>NodeJS</td>
+                    <td>28</td>
+                    <td>05-8236-6712</td>
+                    <td>Chiang Rai</td>
+                </tr>
+                <tr>
+                    <td>NestJS</td>
+                    <td>29</td>
+                    <td>03-1667-7896</td>
+                    <td>Phare</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <img src="https://placehold.co/200" alt="" class="img1">
+    <div class="iframe"><h1>This is iFrame</h1><iframe src="/ul.html" frameborder="2"></iframe></div>
+</body>
+</html>
