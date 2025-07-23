@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-black text-white">
+    <div
+      class="w-screen h-screen flex flex-col items-center justify-center gap-y-4"
+    >
+      <div class="flex flex-col gap-2">
+        <label for="" class="uppercase text-green-500"><i class="fa-solid fa-user mr-2 text-[20px] text-green-500"></i>Username</label>
+        <input
+          placeholder="Enter to Username"
+          class="w-[300px] py-2 rounded-lg px-4 border-2 border-green-500 text-black focus:outline-none focus:border-orange-500
+          hover:border-orange-300
+          "
+          type="text"
+        />
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <label for="" class="uppercase text-orange-500"><i class="fa-solid fa-key mr-2 text-orange-500"></i>Password</label>
+        <div class="relative">
+            <input 
+            placeholder="Enter to Password"
+            class="w-[300px] py-2 px-8 rounded-lg border-2 border-orange-500 text-black focus:outline-none focus:border-green-500 
+            hover:border-green-200"
+            type="password" /><i class="fa-solid fa-lock text-orange-500 absolute top-4 left-3"></i>
+        </div>
+       
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <label for="" class="uppercase text-yellow-500"><i class="fa-solid fa-phone mr-2 text-yellow-500"></i>Phone Number</label>
+        <input placeholder="Enter to Phone Number" 
+        class="w-[300px] py-2 px-4 rounded-lg focus:outline-none border-2 border-yellow-500 
+        hover:border-orange-200 focus:border-orange-500 text-black placeholder:text-yellow-500"
+        type="number" />
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <label for="" class="uppercase text-blue-500"><i class="fa-solid fa-clipboard-list mr-2 text-blue-500"></i>Select</label>
+        <select class="w-[300px] py-2 rounded-lg  px-4 focus:outline-none text-blue-500 appearance-none">
+            <option value="" class="text-center" disabled selected> -- Enter to Select -- </option>
+            <option value="" class="bg-green-500 text-white">Vue</option>
+            <option value="" class="bg-blue-400 text-white">TailwindCSS</option>
+            <option value="" class="bg-indigo-500 text-white">React</option>
+            <option value="" class="bg-blue-500 text-white">TypeScript</option>
+            <option value="" class="bg-yellow-500 text-black">Express.js</option>
+        </select>
+      </div>
+
+      <!-- 0px คือการขยันในแนวแกน x -->
+      <!-- 4px คือการขยันในแนวแกน y -->
+      <!-- 20px คือขนาดของความฟุ้งของเงา -->
+      <!-- 0px คือขนาดของความเข้มของเงา -->
+
+      <div class="flex mt-10">
+       <button class="uppercase px-10 py-4 border-2 rounded-lg text-green-500 font-black
+       shadow-[0px_4px_20px_0px_green]
+       ">
+        check
+        <i class="fa-solid fa-check"></i>
+       </button>
+      </div>
+
+      <div class="flex mt-10">
+       <button class="uppercase px-10 py-4 border-b-2 border-orange-300 rounded-lg text-orange-500 font-black w-[300px] tracking-wider
+       shadow-[0px_24px_20px_1px_orange] hover:shadow-[0px_20px_25px_0px_white] transition-all duration-300 hover:border-cyan-400
+       hover:text-cyan-400
+       ">
+        check
+        <i class="fa-solid fa-check"></i>
+       </button>
+      </div>
+    </div>
+  </body>
+</html>

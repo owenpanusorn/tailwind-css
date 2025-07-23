@@ -3,7 +3,11 @@
 export default {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Kanit", "sans-serif"],
+      },
+    },
   },
   plugins: [],
-}
+};
