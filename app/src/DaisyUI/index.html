@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaisyUI</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="container w-screen h-screen">
+        <!-- navbar -->
+        <div class="navbar bg-base-00 shadow-sm w-screen">
+            <div class="flex-none">
+                <button class="btn btn-square btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-5 w-5 stroke-current"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg>
+                </button>
+            </div>
+            <div class="flex-1">
+                <a class="btn btn-ghost text-xl">daisyUI</a>
+            </div>
+            <div class="flex-none">
+                <button class="btn btn-square btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-5 w-5 stroke-current"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path> </svg>
+                </button>
+            </div>
+        </div>
+        <!-- navbar -->
+
+        <!-- content -->
+         <div class="w-screen h-screen mx-auto flex flex-col items-center justify-center">
+            <div class="flex flex-col gap-2">
+                <button class="px-4 py-2 bg-black rounded-lg text-white skeleton">Tailwind</button>
+
+                <button class="btn btn-info">DaisyUI</button>
+
+                <button class="btn btn-info btn-outline">DaisyUI Outline</button>
+
+                <div class="h-32 w-32 bg-blue-500 flex items-center justify-center skeleton">
+                    <button class="btn btn-success glass">DaisyUI Glass</button>
+                </div>
+                
+                <button class="btn">
+                    <span class="loading loading-spinner"></span>
+                    loading
+                </button>
+            </div>
+         </div>
+        <!-- content -->
+    </div>
+</body>
+</html>
