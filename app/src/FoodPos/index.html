@@ -26,7 +26,9 @@
   <body>
     <div class="container h-screen w-screen flex relative">
       <!-- siderbar -->
-      <aside class="bg-black h-full w-60 rounded-r-3xl flex flex-col">
+      <aside
+        class="bg-black h-full w-60 rounded-r-3xl flex flex-col hover:bg-slate-800 from-slate-800 to-slate-700 translate-all duration-700 delay-300 z-10"
+      >
         <div class="w-full flex items-center justify-center h-20">
           <p class="text-white text-2xl">Food POS</p>
         </div>
@@ -41,22 +43,74 @@
 
         <div class="flex flex-col gap-2 items-center justify-center mt-5">
           <p class="text-white">Hello Cat Cat</p>
-          <span class="text-orange-400 text-sm">อีก 2 ชั่วโมงได้เวลามื้อเที่ยง</span>
+          <span class="text-orange-400 text-sm"
+            >อีก 2 ชั่วโมงได้เวลามื้อเที่ยง</span
+          >
         </div>
 
         <section>
-            <div class="text-white flex flex-col items-center justify-center mt-8 gap-y-4 px-4">
-                <button class="w-full py-3 rounded-lg hover:text-orange-500 hover:bg-white"><i class="fa-solid fa-mug-saucer mr-2"></i> Dashboard</button>
-                <button class="w-full py-3 rounded-lg hover:text-orange-500 hover:bg-white"><i class="fa-solid fa-list-ol mr-2"></i> Orders</button>
-                <button class="w-full py-3 rounded-lg hover:text-orange-500 hover:bg-white"><i class="fa-solid fa-credit-card mr-2"></i> Details</button>
-                <button class="w-full py-3 rounded-lg hover:text-orange-500 hover:bg-white"><i class="fa-solid fa-coins mr-2"></i> Finance</button>
-                <button class="w-full py-3 rounded-lg mt-40 bg-orange-500 text-black"><i class="fa-solid fa-person-through-window mr-2 bg-black p-2 rounded-full text-white"></i> Log out</button>
-            </div>
+          <div
+            class="text-white flex flex-col items-center justify-center mt-8 gap-y-4 px-4"
+          >
+            <button
+              class="w-full py-3 rounded-lg hover:text-orange-500 hover:bg-white"
+            >
+              <i class="fa-solid fa-mug-saucer mr-2"></i> Dashboard
+            </button>
+            <button
+              class="w-full py-3 rounded-lg hover:text-orange-500 hover:bg-white"
+            >
+              <i class="fa-solid fa-list-ol mr-2"></i> Orders
+            </button>
+            <button
+              class="w-full py-3 rounded-lg hover:text-orange-500 hover:bg-white"
+            >
+              <i class="fa-solid fa-credit-card mr-2"></i> Details
+            </button>
+            <button
+              class="w-full py-3 rounded-lg hover:text-orange-500 hover:bg-white"
+            >
+              <i class="fa-solid fa-coins mr-2"></i> Finance
+            </button>
+            <button
+              class="w-full py-3 rounded-lg mt-40 bg-orange-500 text-black"
+            >
+              <i
+                class="fa-solid fa-person-through-window mr-2 bg-black p-2 rounded-full text-white"
+              ></i>
+              Log out
+            </button>
+          </div>
         </section>
       </aside>
       <!-- End sidebar -->
 
       <!-- navbar -->
+      <div
+        class="w-full h-20 fixed bg-black text-white flex items-center justify-between ml-60"
+      >
+        <div>
+          <!-- 1 -->
+          <div class="flex items-center justify-between">
+            <div class="flex bg-gray-100 items-center w-full rounded-full">
+              <input 
+              type="text"
+              class="bg-gray-100 rounded-full py-4 px-2"
+              placeholder="Search for Dinner"
+              >
+
+              <div>
+                <button></button>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="flex">
+              <div>test</div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- End navbar -->
 
       <!-- content -->
